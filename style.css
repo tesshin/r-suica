@@ -1,0 +1,52 @@
+body {
+  font-family: "Press Start 2P", cursive; /* ピクセル風フォント */
+  background-color: #000; /* 暗い背景色 */
+  color: #fff; /* 明るい文字色 */
+}
+
+#game-container {
+  position: relative;
+  width: 600px;
+  margin: 20px auto;
+  background-color: #000; /* 暗い背景 */
+  padding: 20px;
+  border: 3px solid #fff; /* 白い境界線 */
+}
+
+#score-board,
+#next-fruit {
+  font-size: 16px; /* 大きめのフォントサイズ */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#game-canvas {
+  border: 3px solid #fff; /* 白い境界線 */
+  background-color: #444; /* 暗めのグレー */
+  cursor: pointer;
+}
+
+#game-clear {
+  display: none;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+  color: #4caf50; /* クリア時のカラーを明るく */
+}
+
+#game-stats {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#start-button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#start-button {
+  font-size: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}

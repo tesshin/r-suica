@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>逆スイカゲーム</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+    <meta property="og:title" content="逆スイカゲーム" />
+    <meta property="og:description" content="スイカゲームの逆" />
+    <meta
+      property="og:image"
+      content="https://suica.pages.dev/images/ogp.png"
+    />
+    <meta property="og:url" content="https://suica.pages.dev/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="逆スイカゲーム" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+
+  <body>
+    <div id="game-container">
+      <div id="score-board">SCORE: <span id="score">0</span></div>
+      <div id="next-fruit">
+        NEXT: <span id="next-name"></span>
+        <span
+          id="next-color"
+          style="
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+          "
+        ></span>
+      </div>
+      <div id="game-stats">
+        <p id="time">Time: 0</p>
+        <p id="count">Count: 0</p>
+      </div>
+      <div id="start-button-container">
+        <button id="start-button">Start Game</button>
+      </div>
+      <canvas id="game-canvas"></canvas>
+      <div id="game-clear" style="display: none">GAME CLEAR!</div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.16.0/matter.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
